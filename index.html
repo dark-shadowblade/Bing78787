@@ -29,10 +29,17 @@
       var timeString = hours + ":" + minutes + ":" + seconds;
       document.getElementById("time").innerHTML = timeString;
 
+      // Debugging: Log the current hour
+      console.log("Current hour: " + hours);
+
       // Check the current hour and open the respective website
       if (hours > 10) {
+        // Debugging: Log redirection to website 1
+        console.log("Redirecting to website 1");
         window.location.href = "https://msbing-one.github.io/Hello-group-/";
       } else {
+        // Debugging: Log redirection to website 2
+        console.log("Redirecting to website 2");
         window.location.href = "https://dark-shadowblade.github.io/MSEdgeSearchClickerabhishek/";
       }
     }
